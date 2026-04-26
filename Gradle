@@ -1,0 +1,17 @@
+Install required software locally (latest version of Gradle, Java).
+​​Go to https://github.com/spring-projects/spring-petclinic, fork it, and clone the forked repo.
+Check what tasks are available for the project.
+Run all available project tests.
+Build the project and run it, and verify it’s available on the localhost in the browser.
+Perform the cleanup.
+Explore gradle-related files. Identify which gradle file defines the project name and change it. Build the project again and verify the new project name is being used (you need to find .jar files).
+Create an additional custom task, which depends on the build task (so by calling this task the build and test tasks will also be executed). It should open the browser with generated test results.
+Add the dynamic versioning to your project using the commonly used axion-release-plugin (GitHub - allegro/axion-release-plugin: Gradle release & version management plugin.). Check the Version your project (Gradle best practice tip #5) to find the tutorial on how to do this.
+Check the new available commands after the plugin addition. Using these new commands, check the current project version. Then add and commit some changes to the project and make the project release. Check the current version one more time and git tags available. Note the difference between SNAPSHOT and release versions.
+Perform the cleanup.
+Hint: you may need the following documentation while working on the practice task:
+
+Authoring Tasks
+The Java Plugin
+Version your project (Gradle best practice tip #5)
+Gradle task to open a url in the default browser - Stack Overflow
